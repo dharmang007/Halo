@@ -7,6 +7,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Movement : MonoBehaviour {
 
 	bool facingRight;
+    bool jump=  false;
     public float speed = 10f;
 	private Rigidbody2D m_RigidBody2D;
 
@@ -18,16 +19,22 @@ public class Movement : MonoBehaviour {
 		m_RigidBody2D = this.GetComponent<Rigidbody2D>();
 	}
 	
-	// Update is called once per frame
+    private void Update()
+    {
+       
+    }
+
+
 	void FixedUpdate () 
 	{
-		float h = CrossPlatformInputManager.GetAxis("Horizontal");
+		float h = Input.GetAxisRaw("Horizontal"); // gets the value between -1 to 1, where pressing A means -1 and D means 1 
         animator.SetFloat("speed",Math.Abs(h));
 		Move(h);
 		if(Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.UpArrow))
 		{
-
+            jump =true;
 			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y+(float)0.3);
+            jump = false;
 		}		
 	}
 
