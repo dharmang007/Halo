@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: cc4171fa029fc1e478767c4a265ebd60
-timeCreated: 1552402804
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Halo Sprite_0
@@ -65,8 +63,26 @@ TextureImporter:
     21300116: Halo Sprite_58
     21300118: Halo Sprite_59
     21300120: Halo Sprite_60
+    21300122: Halo Sprite_21
+    21300124: Halo Sprite_22
+    21300126: Halo Sprite_23
+    21300128: Halo Sprite_24
+    21300130: Halo Sprite_25
+    21300132: Halo Sprite_26
+    21300134: Halo Sprite_31
+    21300136: Halo Sprite_32
+    21300138: Halo Sprite_33
+    21300140: Halo Sprite_34
+    21300142: Halo Sprite_35
+    21300144: Halo Sprite_36
+    21300146: Halo Sprite_43
+    21300148: Halo Sprite_44
+    21300150: Halo Sprite_45
+    21300152: Halo Sprite_46
+    21300154: Halo Sprite_47
+    21300156: Halo Sprite_48
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +100,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -92,9 +110,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -106,18 +124,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -127,7 +148,19 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -154,6 +187,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 57a9e5e02541b3a4894c789a1610bfa6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_1
       rect:
@@ -168,6 +207,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cf79de34f44802d41bd8e0ba4ff1e75f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_2
       rect:
@@ -182,6 +227,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2c320a0b70c84b74b8269257bb985276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_3
       rect:
@@ -196,6 +247,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f45e57558ea513246b775df8f69abb6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_4
       rect:
@@ -210,6 +267,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 738d9279e7e18f648a8fb733d54fedce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_5
       rect:
@@ -224,6 +287,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 72e2425cfd340bb459c40e65670a69fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_6
       rect:
@@ -238,6 +307,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c1c439efc27b4ab4095dc5ff11ce00df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_7
       rect:
@@ -252,6 +327,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 93bb708db20c70740ae3f6fecc5bd8ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_8
       rect:
@@ -266,6 +347,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c0a1402d42c45b147b752cfa5ea2fd2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_9
       rect:
@@ -280,6 +367,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 35257a72a2456ca429309c64833a8f29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_10
       rect:
@@ -294,6 +387,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9104f28b9c09d6747a47ff26a7790a69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_11
       rect:
@@ -308,6 +407,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 532e117d5af879342a0027fe05131e73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_12
       rect:
@@ -322,6 +427,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 77bafe8a540e80a4eb2f88c6a71ced70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_13
       rect:
@@ -336,6 +447,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 290a18253ff310d45a5ebc5e2ef98d7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_14
       rect:
@@ -350,6 +467,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 97d1584662fa184489104b6a1ed7c762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_15
       rect:
@@ -364,6 +487,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3498d36e0a0eb344681e66d72cc7085a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_16
       rect:
@@ -378,6 +507,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bf1aff85188bb8540bab02e9ee2bcfeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_17
       rect:
@@ -392,6 +527,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0df1e74d8c2083a47bca2a328f00fd9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_18
       rect:
@@ -406,6 +547,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66eb075b17fc3534487aba8efb483f6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_19
       rect:
@@ -420,6 +567,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d1a57573691092a498884ba57f11299b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_20
       rect:
@@ -434,8 +587,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0bb07366ffdce36478d2cfcb8b6b452e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief1
+      name: Halo Sprite_21
       rect:
         serializedVersion: 2
         x: 8
@@ -443,13 +602,19 @@ TextureImporter:
         width: 17
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3bd1f8f99ffed9b4eb19f1841222bfd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief2
+      name: Halo Sprite_22
       rect:
         serializedVersion: 2
         x: 42
@@ -462,8 +627,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 00fb9e7b79c605547a67cd569c72df75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief3
+      name: Halo Sprite_23
       rect:
         serializedVersion: 2
         x: 73
@@ -476,8 +647,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 18ddcc1675c7edb4e889f55492cb2069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief4
+      name: Halo Sprite_24
       rect:
         serializedVersion: 2
         x: 99
@@ -490,8 +667,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c363e103cd5feaf49ae9a166e0b78b99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief5
+      name: Halo Sprite_25
       rect:
         serializedVersion: 2
         x: 128
@@ -504,8 +687,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c8e7ff96d25db6f41bbb18c99b02d77f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief6
+      name: Halo Sprite_26
       rect:
         serializedVersion: 2
         x: 154
@@ -518,6 +707,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5f6cccc489e451a4abe7235f2a6819bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_27
       rect:
@@ -532,6 +727,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 21bc73b2770d05d429a8cb663f97f2c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_28
       rect:
@@ -546,6 +747,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9e97a827db6e304eb938fea3de13b91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_29
       rect:
@@ -560,6 +767,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3a52199f96a5d814fa8a27fa4f3f7a77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_30
       rect:
@@ -574,8 +787,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28327e816f529c149a5e1dee45510c91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief1Gun1
+      name: Halo Sprite_31
       rect:
         serializedVersion: 2
         x: 8
@@ -588,8 +807,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 73cc32893e9d5d6499b94960d12c129a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief2Gun1
+      name: Halo Sprite_32
       rect:
         serializedVersion: 2
         x: 42
@@ -602,8 +827,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6dfa6a072ea0a0044b229748ed151e68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief3Gun1
+      name: Halo Sprite_33
       rect:
         serializedVersion: 2
         x: 73
@@ -616,8 +847,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 90c364279fbd0524cb66b82db73820fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief4Gun1
+      name: Halo Sprite_34
       rect:
         serializedVersion: 2
         x: 99
@@ -630,8 +867,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e00de381ded1b8e49a511cf14c3ceacd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief5Gun1
+      name: Halo Sprite_35
       rect:
         serializedVersion: 2
         x: 128
@@ -644,8 +887,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 340434f4554ccce4791232f18b2239ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief6Gun1
+      name: Halo Sprite_36
       rect:
         serializedVersion: 2
         x: 154
@@ -658,6 +907,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b94c12566e5a592428c890519c8a8017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_37
       rect:
@@ -672,6 +927,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d2482d1a7f97162439d6aabf15a2e464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_38
       rect:
@@ -686,6 +947,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09603bacf1410f34b915a791b55b40a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_39
       rect:
@@ -700,6 +967,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 14438681d7063bc469fa3c24ecac5a00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_40
       rect:
@@ -714,6 +987,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9b12d1c8f1c503744829a5bfaf88f732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_41
       rect:
@@ -728,6 +1007,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 18152fb9a0e1d46498008c12b3af5753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_42
       rect:
@@ -742,8 +1027,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f5d725cea4768194e9a5f302ce32ddba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief1Gun2
+      name: Halo Sprite_43
       rect:
         serializedVersion: 2
         x: 8
@@ -756,8 +1047,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9571a82c42ba8294ab16fbb2f89709b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief2Gun2
+      name: Halo Sprite_44
       rect:
         serializedVersion: 2
         x: 42
@@ -770,8 +1067,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fb61ff190803cb24b90c0820fa476fc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief3Gun2
+      name: Halo Sprite_45
       rect:
         serializedVersion: 2
         x: 73
@@ -784,8 +1087,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 79f426de871d9a94796359ae4088aa0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief4Gun2
+      name: Halo Sprite_46
       rect:
         serializedVersion: 2
         x: 99
@@ -798,8 +1107,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e13ae3105e6bdd141abee73688a74e72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief5Gun2
+      name: Halo Sprite_47
       rect:
         serializedVersion: 2
         x: 128
@@ -812,8 +1127,14 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1cb7495a9aae6ef42923272b36d0e6b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: MasterChief6Gun2
+      name: Halo Sprite_48
       rect:
         serializedVersion: 2
         x: 154
@@ -826,6 +1147,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9c28c2aac9328b5439205da035241ab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_49
       rect:
@@ -840,6 +1167,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: be724839139cfa64c84c8621a097c62f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_50
       rect:
@@ -854,6 +1187,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ff566323cdeaf234cb5221d0a2560cea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_51
       rect:
@@ -868,6 +1207,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4065e1fc502bd044a869f63a39a10547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_52
       rect:
@@ -882,6 +1227,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 39fda0396fb981046a01900f2013f3c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_53
       rect:
@@ -896,6 +1247,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 226aee30274d6554e81ba2048e121eca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_54
       rect:
@@ -910,6 +1267,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 369b9c91ce9a80342acba507a9a94879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_55
       rect:
@@ -924,6 +1287,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c2b43f697acbaa49b4de0ac3355cf46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_56
       rect:
@@ -938,6 +1307,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f6a2e86132cf20f4eae87527d4d1c58d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_57
       rect:
@@ -952,6 +1327,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 381e4ac4bbb7e05419cc88ffb4810ec1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_58
       rect:
@@ -966,6 +1347,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5aa1016e8aa3ebd46ac6cb03e58b40ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_59
       rect:
@@ -980,6 +1367,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 889fdd6733b9ca440911a3db578dcf55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Halo Sprite_60
       rect:
@@ -994,6 +1387,12 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5e4fc2e63beec7408083fa14b6d5199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline:
     - - {x: -83, y: -78.5}
       - {x: -96, y: -78.5}
@@ -1475,7 +1874,15 @@ TextureImporter:
       - {x: -34, y: 116.5}
       - {x: -36, y: 117.5}
     physicsShape: []
+    bones: []
+    spriteID: 3f4a8a7bde997974dbabe1e806e3471b
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
