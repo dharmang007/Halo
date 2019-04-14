@@ -15,11 +15,6 @@ public class Movement : MonoBehaviour {
     [SerializeField] private Animator m_animator;
 	private Rigidbody2D m_RigidBody2D;
     
-	// Use this for initialization
-
-    private void Start() {
-        Debug.Log("X: "+transform.position.x + " Y: "+ transform.position.y );
-    }
 	void Awake()
 	{
 		facingRight = true;
@@ -48,6 +43,7 @@ public class Movement : MonoBehaviour {
         {
             m_animator.SetBool("Ground",true);
         }
+
         m_animator.SetFloat("Speed",Mathf.Abs(move));
         
         m_RigidBody2D.velocity = new Vector2(move*speed, m_RigidBody2D.velocity.y);
@@ -63,13 +59,15 @@ public class Movement : MonoBehaviour {
             Flip();
         }
         // jumping
+        
         if(jump)
         {
             m_animator.SetBool("Ground",false);
 			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y+(float)0.3);
-        }
+        } 
+        
 
-       /* 
+       /*
        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)&& !jump)
 		{
             
@@ -77,12 +75,14 @@ public class Movement : MonoBehaviour {
             m_animator.SetBool("Ground",false);
 			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y+(float)0.3);     
             //m_RigidBody2D.AddForce(new Vector2(0f,1f),ForceMode2D.Force);
-        }	*/ 
+        } 
+       */
+        	 
     }
 
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        if(other.gameObject.tag == "Platform")
+        if(other.gameObject.tag != "Player" && other.gameObject.tag != "Enemy")
         {
             jump = false;
         }

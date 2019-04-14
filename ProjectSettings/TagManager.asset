@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Enemy
+  - Weapons
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Background
   - Player
   - Traps
-  - Background2
+  - BackgroundSky
   - Platform
   - 
   - 
@@ -40,10 +41,7 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
-  - name: Background1
+  - name: BackgroundSky
     uniqueID: 3702609387
     locked: 0
   - name: Background
@@ -57,4 +55,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1299493993
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
