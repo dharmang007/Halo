@@ -8,10 +8,7 @@ public class Movement : MonoBehaviour {
 
 	bool facingRight;
     bool jump;
-    public float speed = 10f;
-    //public float m_JumpForce = 400f;
-  
-    
+    public float speed = 10f;    
     [SerializeField] private Animator m_animator;
 	private Rigidbody2D m_RigidBody2D;
     
@@ -27,7 +24,7 @@ public class Movement : MonoBehaviour {
         if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
-		}
+		}        
     }
  
 	void FixedUpdate () 
@@ -65,18 +62,6 @@ public class Movement : MonoBehaviour {
             m_animator.SetBool("Ground",false);
 			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y+(float)0.3);
         } 
-        
-
-       /*
-       if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)&& !jump)
-		{
-            
-            jump = true;
-            m_animator.SetBool("Ground",false);
-			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y+(float)0.3);     
-            //m_RigidBody2D.AddForce(new Vector2(0f,1f),ForceMode2D.Force);
-        } 
-       */
         	 
     }
 
@@ -91,9 +76,10 @@ public class Movement : MonoBehaviour {
     private void Flip()
     {
         facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+        transform.Rotate(0f,180f,0f);
+        //Vector3 theScale = transform.localScale;
+        //theScale.x *= -1;
+        //transform.localScale = theScale;
 			
     }
 }
