@@ -36,31 +36,23 @@ public class Movement : MonoBehaviour {
     private void Move(float move)
     {
 
-        if(jump == false)
+        if(!jump)
         {
             m_animator.SetBool("Ground",true);
         }
 
-        m_animator.SetFloat("Speed",Mathf.Abs(move));
-        
+        m_animator.SetFloat("Speed",Mathf.Abs(move));        
         m_RigidBody2D.velocity = new Vector2(move*speed, m_RigidBody2D.velocity.y);
-        if (move > 0 && !facingRight)
+        if ((move > 0 && !facingRight) || move < 0 && facingRight)
         {
             // ... flip the player.
             Flip();
         }
-        // Otherwise if the input is moving the player left and the player is facing right...
-        else if (move < 0 && facingRight)
-        {
-            // ... flip the player.
-            Flip();
-        }
-        // jumping
-        
+        // jumping        
         if(jump)
         {
             m_animator.SetBool("Ground",false);
-			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y+(float)0.3);
+			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y + 0.3f);
         } 
         	 
     }
@@ -76,10 +68,6 @@ public class Movement : MonoBehaviour {
     private void Flip()
     {
         facingRight = !facingRight;
-        transform.Rotate(0f,180f,0f);
-        //Vector3 theScale = transform.localScale;
-        //theScale.x *= -1;
-        //transform.localScale = theScale;
-			
+        transform.Rotate(0f,180f,0f);			
     }
 }
