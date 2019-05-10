@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2245532384373309813}
   speed: 20
+  bulletFiredBy: {fileID: 0}
 --- !u!58 &744400599445005218
 CircleCollider2D:
   m_ObjectHideFlags: 0
