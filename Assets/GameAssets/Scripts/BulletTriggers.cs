@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionScript : MonoBehaviour
+public class BulletTriggers : MonoBehaviour
 {
 
     public string firedBy = string.Empty;
@@ -14,7 +14,7 @@ public class CollisionScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D target)
     {
-        if(firedBy.Equals("Player") && target.gameObject.CompareTag("Enemy"))
+        if (firedBy.Equals("Player") &&  target.gameObject.CompareTag("Enemy"))
         {
            
             Destroy(target.gameObject);

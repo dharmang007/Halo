@@ -97,7 +97,7 @@ public class Fire : MonoBehaviour
 
         bulletSpawn = Instantiate(bulletPrefab, gunPoint.position, gunPoint.rotation); // Create Bullet  
         bulletSpawn.GetComponent<Rigidbody2D>().velocity = gunPoint.transform.right * bulletSpeed;  // Add the velocity to bullet 
-        bulletPrefab.GetComponent<CollisionScript>().firedBy = gameObject.tag; // tag name which will be used to check which bullet was fired by whom                
+        bulletPrefab.GetComponent<BulletTriggers>().firedBy = gameObject.tag; // tag name which will be used to check which bullet was fired by whom                
         cnt++;
         Destroy(bulletSpawn, 2f); // Destroy Bullet after 2 seconds
     }

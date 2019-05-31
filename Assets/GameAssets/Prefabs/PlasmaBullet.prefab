@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2245532384373309813}
   - component: {fileID: 744400599445005218}
   - component: {fileID: 1848336610253163091}
-  - component: {fileID: 4620105754766025565}
+  - component: {fileID: 8891411693539591272}
   m_Layer: 0
   m_Name: PlasmaBullet
   m_TagString: Untagged
@@ -216,7 +216,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4620105754766025565
+--- !u!114 &8891411693539591272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3674668776004573279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3468907a73e564ab8c6549e85f131e, type: 3}
+  m_Script: {fileID: 11500000, guid: d6291251ce128e5479b88a979d5a23a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firedBy: Player
+  firedBy: 
