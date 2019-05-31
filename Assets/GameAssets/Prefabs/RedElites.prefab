@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 472872969014429480}
   - component: {fileID: 472872969014429481}
   - component: {fileID: 472872969014429482}
+  - component: {fileID: -1849249984901978919}
   - component: {fileID: 472872969014429483}
   m_Layer: 10
   m_Name: RedElites
@@ -32,7 +33,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10, y: -11, z: -0.75}
   m_LocalScale: {x: 7, y: 7, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2296563698272676443}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73,7 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300074, guid: cc4171fa029fc1e478767c4a265ebd60, type: 3}
+  m_Sprite: {fileID: 3785190545942744668, guid: 3df7dd94ba080af4c9ff43b74a05319d,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,7 +144,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.23, y: 0.32}
+    oldSize: {x: 0.23, y: 0.31}
     newSize: {x: 0.23, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -166,6 +169,22 @@ CircleCollider2D:
   m_Offset: {x: -0.00000011920929, y: -0.04672157}
   serializedVersion: 2
   m_Radius: 0.1132784
+--- !u!114 &-1849249984901978919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472872969014429492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb1f287d47695a45b8560bbecfb6793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunPoint: {fileID: 2296563698272676443}
+  bulletPrefab: {fileID: 3674668776004573279, guid: 6b73e9e69837baf4d9c6adf739850939,
+    type: 3}
+  bulletSpeed: 12
 --- !u!114 &472872969014429483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,5 +198,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  m_animator: {fileID: 0}
-  m_RigidBody2D: {fileID: 0}
+  m_animator: {fileID: 472872969014429480}
+  fireBullets: 0
+  m_RigidBody2D: {fileID: 472872969014429495}
+--- !u!1 &5549687869461372947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2296563698272676443}
+  m_Layer: 10
+  m_Name: GunPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2296563698272676443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5549687869461372947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.129, y: -0.025, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 472872969014429493}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

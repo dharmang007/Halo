@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6248965441176591378}
   - component: {fileID: 2120681340793140643}
   - component: {fileID: 2245532384373309813}
-  - component: {fileID: 2968385567338990964}
   - component: {fileID: 744400599445005218}
   - component: {fileID: 1848336610253163091}
+  - component: {fileID: 4620105754766025565}
   m_Layer: 0
   m_Name: PlasmaBullet
   m_TagString: Untagged
@@ -95,7 +95,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -104,21 +104,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &2968385567338990964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3674668776004573279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad70a6483905b59419d8185f3c5b8e46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 2245532384373309813}
-  speed: 20
-  bulletFiredBy: {fileID: 0}
 --- !u!58 &744400599445005218
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132,9 +117,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.013625477, y: 0}
   serializedVersion: 2
-  m_Radius: 0.034999996
+  m_Radius: 0.017542362
 --- !u!82 &1848336610253163091
 AudioSource:
   m_ObjectHideFlags: 0
@@ -231,3 +216,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4620105754766025565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674668776004573279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3468907a73e564ab8c6549e85f131e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firedBy: Player

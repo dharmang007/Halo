@@ -8,7 +8,8 @@ public class Movement : MonoBehaviour {
 
 	bool facingRight;
     bool jump;
-    public float speed = 10f;    
+    [SerializeField] private readonly float jumpforce = 0.5f;
+    [SerializeField] private readonly float speed = 10f;    
     [SerializeField] private Animator m_animator;
 	private Rigidbody2D m_RigidBody2D;
     
@@ -52,8 +53,17 @@ public class Movement : MonoBehaviour {
         if(jump)
         {
             m_animator.SetBool("Ground",false);
-			this.transform.position = new Vector2(this.transform.position.x,this.transform.position.y + 0.3f);
+            if(Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                
+            }
+            else
+            {
+                this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + jumpforce);
+            }
+            
         } 
+
         	 
     }
 
@@ -63,6 +73,7 @@ public class Movement : MonoBehaviour {
         {
             jump = false;
         }
+
     }
 
     private void Flip()
