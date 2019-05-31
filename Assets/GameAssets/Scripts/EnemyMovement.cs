@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     bool jump;
     public float speed = 1f;
     [SerializeField] private Animator m_animator;
+    [SerializeField] private bool fireBullets;
     public Rigidbody2D m_RigidBody2D;
     private float jumpRate = 2f,nextJump=0f;
 
