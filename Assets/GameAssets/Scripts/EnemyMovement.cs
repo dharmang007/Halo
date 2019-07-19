@@ -9,10 +9,14 @@ public class EnemyMovement : MonoBehaviour
     bool jump;
     public float speed = 1f;
     [SerializeField] private Animator m_animator;
-    [SerializeField] private bool fireBullets;
+    // [SerializeField] private bool fireBullets;
     public Rigidbody2D m_RigidBody2D;
-    private float jumpRate = 2f,nextJump=0f;
-
+    private static float JUMPRATE = 2f;
+    private float nextJump = 0f;
+    private float jumpRate;
+    /// <summary>
+    /// Simple Initializations
+    /// </summary>
     void Awake()
     {
         facingRight = true;
@@ -22,19 +26,35 @@ public class EnemyMovement : MonoBehaviour
         m_animator.SetBool("Ground",true);
         jump = false;
         nextJump = Time.time + nextJump;
+        // Time.time is time in seconds since the start of the game
     }
 
-    // Update is called once per frame
+    
+    /// <summary>
+    /// This update function is used to make enemy character jump after certain time rate
+    /// </summary>
     private void Update()
     {
-        
+
+        /* **** Crash Prone Solution ******* 
         if (Time.time > nextJump && jump == false)
         {
-            nextJump = Time.time + jumpRate;
+            nextJump = Time.time + jumpRate; // this sets limit for next jump 
             jump = true;
+        }*/
+
+        jumpRate -= Time.deltaTime;
+        if( jumpRate <= 0 && !jump)
+        {
+            jump = true;
+            jumpRate = JUMPRATE; // reset the value
         }
+
     }
 
+    /// <summary>
+    /// Handles the basic motion of the enemy. It uses the jump flag to check whether the enemy should jump or not
+    /// </summary>
     void FixedUpdate()
     {
         if (!jump)
