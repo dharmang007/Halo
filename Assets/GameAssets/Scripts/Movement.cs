@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour {
 
 	bool facingRight;
     bool jump;
+    float horizontalMove = 0f;
     [SerializeField] private readonly float jumpforce = 0.3f;
     [SerializeField] private readonly float speed = 10f;    
     [SerializeField] private Animator m_animator;
@@ -28,12 +29,13 @@ public class Movement : MonoBehaviour {
     /// This flag will be used in Fixed update to move the player
     /// </summary>
     private void Update() 
-    { 
-         
+    {
+        horizontalMove = Input.GetAxisRaw("Horizontal"); // gets the value between -1 to 1, where pressing A means -1 and D means 1
         if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
-		}        
+		}
+        
     }
  
     /// <summary>
@@ -41,8 +43,8 @@ public class Movement : MonoBehaviour {
     /// </summary>
 	void FixedUpdate () 
 	{ 
-		float h = Input.GetAxisRaw("Horizontal"); // gets the value between -1 to 1, where pressing A means -1 and D means 1 
-		Move(h);
+		 
+		Move(horizontalMove);
 	}
 
     /// <summary>
@@ -56,11 +58,9 @@ public class Movement : MonoBehaviour {
         {
             // the player is not jumping and he is on the ground (some platform where he can stand)
             m_animator.SetBool("Ground",true); 
-        }
-
+        } 
         m_animator.SetFloat("Speed",Mathf.Abs(move));        
         m_RigidBody2D.velocity = new Vector2(move*speed, m_RigidBody2D.velocity.y);
-       
         if ((move > 0 && !facingRight) || move < 0 && facingRight)
         {
             // ... flip the player.

@@ -14,6 +14,7 @@ public class BulletTriggers : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D target)
     {
+        // IF the bullet is fired by Player and target is Enemy
         if (firedBy.Equals("Player") &&  target.gameObject.CompareTag("Enemy"))
         {
            
